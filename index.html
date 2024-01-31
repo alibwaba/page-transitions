@@ -32,8 +32,11 @@
 
     #cornerSwipe {
       mask-image: url('bigblackrectangle.svg');
+      -webkit-mask-image: url('bigblackrectangle.svg');
       mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
       mask-size: 0%;
+      -webkit-mask-size: 0%;
     }
 
     #cornerSwipe.visible {
@@ -43,17 +46,22 @@
     @keyframes cornerSwipeTransition {
       0% {
         mask-size: 0% 0%;
+        -webkit-mask-size: 0% 0%;
       }
 
       100% {
         mask-size: 100% 100%;
+        -webkit-mask-size: 100% 100%;
       }
     }
 
     #sideSwipe {
       mask-image: url('bigblackrectangle.svg');
+      -webkit-mask-image: url('bigblackrectangle.svg');
       mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
       mask-size: 0%;
+      -webkit-mask-size: 0%;
     }
 
     #sideSwipe.visible {
@@ -63,17 +71,22 @@
     @keyframes sideSwipeTransition {
       0% {
         mask-size: 0% 100%;
+        -webkit-mask-size: 0% 100%;
       }
 
       100% {
         mask-size: 100% 100%;
+        -webkit-mask-size: 100% 100%;
       }
     }
 
     #topSwipe {
       mask-image: url('bigblackrectangle.svg');
+      -webkit-mask-image: url('bigblackrectangle.svg');
       mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
       mask-size: 0%;
+      -webkit-mask-size: 0%;
     }
 
     #topSwipe.visible {
@@ -83,16 +96,20 @@
     @keyframes topSwipeTransition {
       0% {
         mask-size: 100% 0%;
+        -webkit-mask-size: 100% 0%;
       }
 
       100% {
         mask-size: 100% 100%;
+        -webkit-mask-size: 100% 100%;
       }
     }
 
     #gradientSwipe1 {
       mask-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0));
+      -webkit-mask-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0));
       mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
     }
 
     #gradientSwipe1.visible {
@@ -102,16 +119,21 @@
     @keyframes gradientSwipe1Transition {
       0% {
         mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
         mask-size: 0% 100%;
+        -webkit-mask-size: 0% 100%;
       }
 
       99% {
         mask-size: 1000% 1000%;
+        -webkit-mask-size: 1000% 1000%;
       }
 
       100% {
         mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+        -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
         mask-size: 100% 100%;
+        -webkit-mask-size: 100% 100%;
       }
     }
 
@@ -121,7 +143,9 @@
     */
     #gradientSwipe2 {
       mask-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0));
+      -webkit-mask-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0));
       mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
     }
 
     #gradientSwipe2.visible {
@@ -131,21 +155,27 @@
     @keyframes gradientSwipe2Transition {
       0% {
         mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
         mask-position: 200% 100%;
+        -webkit-mask-position: 200% 100%;
       }
 
       99% {
         mask-position: -100% 100%;
+        -webkit-mask-position: -100% 100%;
       }
 
       100% {
         mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+        -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
       }
     }
 
     #rocketShip {
       mask-image: url('rocket.png');
+      -webkit-mask-image: url('rocket.png');
       mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
     }
 
     #rocketShip.visible {
@@ -155,33 +185,45 @@
     @keyframes rocketShipTransition {
       0% {
         mask-size: 50% 50%;
+        -webkit-mask-size: 50% 50%;
         mask-position: 50% 200%;
+        -webkit-mask-position: 50% 200%;
       }
 
       20% {
         mask-size: 50% 50%;
+        -webkit-mask-size: 50% 50%;
         mask-position: 50% 80%;
+        -webkit-mask-position: 50% 80%;
       }
 
       30% {
         mask-size: 50% 50%;
+        -webkit-mask-size: 50% 50%;
         mask-position: 50% 90%;
+        -webkit-mask-position: 50% 90%;
       }
 
       80% {
         mask-size: 400% 400%;
+        -webkit-mask-size: 400% 400%;
         mask-position: 50% 30%;
+        -webkit-mask-position: 50% 30%;
       }
 
       100% {
         mask-size: 400% 400%;
+        -webkit-mask-size: 400% 400%;
         mask-position: 50% 60%;
+        -webkit-mask-position: 50% 60%;
       }
     }
 
     #starGrow {
       mask-image: url('star.svg');
+      -webkit-mask-image: url('star.svg');
       mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
     }
 
     #starGrow.visible {
@@ -191,12 +233,16 @@
     @keyframes starGrowTransition {
       0% {
         mask-size: 0% 0%;
+        -webkit-mask-size: 0% 0%;
         mask-position: 50% 50%;
+        -webkit-mask-position: 50% 50%;
       }
 
       100% {
         mask-size: 300% 300%;
+        -webkit-mask-size: 300% 300%;
         mask-position: 50% 50%;
+        -webkit-mask-position: 50% 50%;
       }
     }
 
@@ -206,11 +252,16 @@
     #starShrink {
       /* mask-image: url('starinverted.svg'), linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0)); */
       mask-image: url('starinverted.svg');
+      -webkit-mask-image: url('starinverted.svg');
       /* mask-image: url('star.svg'); */
       mask-composite: exclude;
+      -webkit-mask-composite: exclude;
       mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
       mask-size: 0% 0%;
+      -webkit-mask-size: 0% 0%;
       mask-position: 50% 50%;
+      -webkit-mask-position: 50% 50%;
     }
 
     #starShrink.visible {
@@ -220,11 +271,14 @@
     @keyframes starShrinkTransition {
       0% {
         mask-size: 300% 300%;
+        -webkit-mask-size: 300% 300%;
+        /* mask-position: 50% 50%; */
         /* mask-position: 50% 50%; */
       }
 
       99% {
         mask-size: 0% 0%;
+        -webkit-mask-size: 0% 0%;
         /* mask-position: 50% 50%; */
       }
 
@@ -235,8 +289,11 @@
 
     #circleGrow {
       mask-image: radial-gradient(#000 50%, #0000 51%);
+      -webkit-mask-image: radial-gradient(#000 50%, #0000 51%);
       mask-size: 0%;
+      -webkit-mask-size: 0%;
       mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
     }
 
     #circleGrow.visible {
@@ -246,12 +303,16 @@
     @keyframes circleGrowTransition {
       0% {
         mask-size: 0% 0%;
+        -webkit-mask-size: 0% 0%;
         mask-position: 50% 50%;
+        -webkit-mask-position: 50% 50%;
       }
 
       100% {
         mask-size: 300% 300%;
+        -webkit-mask-size: 300% 300%;
         mask-position: 50% 50%;
+        -webkit-mask-position: 50% 50%;
       }
     }
 
@@ -259,8 +320,9 @@
       mask:
         /* linear-gradient(#000 0 0), */
         radial-gradient(#000 50%, #0000 51%);
-        mask-repeat: no-repeat;
-        /* radial-gradient(#000 50%, #0000 51%) content-box center / 50% 50% no-repeat; */
+      mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
+      /* radial-gradient(#000 50%, #0000 51%) content-box center / 50% 50% no-repeat; */
       /* mask-composite: exclude; */
     }
 
@@ -271,14 +333,15 @@
     @keyframes circleShrinkTransition {
       0% {
         mask-size: 100%;
+        -webkit-mask-size: 100%;
       }
 
       100% {
         mask-size: 0%;
+        -webkit-mask-size: 0%;
       }
 
     }
-
   </style>
 </head>
 
