@@ -1,0 +1,24 @@
+#cornerSwipe {
+    mask-image: url('../assets/bigblackrectangle.svg');
+    -webkit-mask-image: url('../assets/bigblackrectangle.svg');
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: 0%;
+    -webkit-mask-size: 0%;
+}
+
+#cornerSwipe.visible {
+    animation: cornerSwipeTransition 0.5s forwards;
+}
+
+@keyframes cornerSwipeTransition {
+    0% {
+        mask-size: 0% 0%;
+        -webkit-mask-size: 0% 0%;
+    }
+
+    100% {
+        mask-size: 100% 100%;
+        -webkit-mask-size: 100% 100%;
+    }
+}

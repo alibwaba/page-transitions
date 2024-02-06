@@ -1,0 +1,28 @@
+#circleGrow {
+    mask-image: radial-gradient(#000 50%, #0000 51%);
+    -webkit-mask-image: radial-gradient(#000 50%, #0000 51%);
+    mask-size: 0%;
+    -webkit-mask-size: 0%;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+}
+
+#circleGrow.visible {
+    animation: circleGrowTransition 2s forwards;
+}
+
+@keyframes circleGrowTransition {
+    0% {
+        mask-size: 0% 0%;
+        -webkit-mask-size: 0% 0%;
+        mask-position: 50% 50%;
+        -webkit-mask-position: 50% 50%;
+    }
+
+    100% {
+        mask-size: 300% 300%;
+        -webkit-mask-size: 300% 300%;
+        mask-position: 50% 50%;
+        -webkit-mask-position: 50% 50%;
+    }
+}

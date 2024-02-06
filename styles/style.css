@@ -1,0 +1,23 @@
+.oldPage,
+.newPage {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+.oldPage {
+    background-color: red;
+    z-index: -1;
+}
+
+.newPage {
+    background-color: blue;
+    z-index: 1;
+}
+
+.box {
+    position: absolute;
+    left: 0;
+    width: 100px;
+    height: 100px;
+}

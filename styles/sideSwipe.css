@@ -1,0 +1,24 @@
+#sideSwipe {
+    mask-image: url('../assets/bigblackrectangle.svg');
+    -webkit-mask-image: url('../assets/bigblackrectangle.svg');
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: 0%;
+    -webkit-mask-size: 0%;
+}
+
+#sideSwipe.visible {
+    animation: sideSwipeTransition 0.5s forwards;
+}
+
+@keyframes sideSwipeTransition {
+    0% {
+        mask-size: 0% 100%;
+        -webkit-mask-size: 0% 100%;
+    }
+
+    100% {
+        mask-size: 100% 100%;
+        -webkit-mask-size: 100% 100%;
+    }
+}

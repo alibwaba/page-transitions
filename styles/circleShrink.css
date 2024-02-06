@@ -1,0 +1,26 @@
+#circleShrink {
+    mask:
+        /* linear-gradient(#000 0 0), */
+        radial-gradient(#000 50%, #0000 50%) center;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    /* radial-gradient(#000 50%, #0000 51%) content-box center / 50% 50% no-repeat; */
+    /* mask-composite: exclude; */
+}
+
+#circleShrink.visible {
+    animation: circleShrinkTransition 2s forwards;
+}
+
+@keyframes circleShrinkTransition {
+    0% {
+        mask-size: 100%;
+        -webkit-mask-size: 100%;
+    }
+
+    100% {
+        mask-size: 0%;
+        -webkit-mask-size: 0%;
+    }
+
+}

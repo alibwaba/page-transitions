@@ -1,0 +1,33 @@
+    /* 
+    gradientSwipe2 is unhappy re. my efforts with mask-position, which has no effect here
+    perhaps to do with the gradient inheriting its size off the containing div?
+    */
+    #gradientSwipe2 {
+        mask-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0));
+        -webkit-mask-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0));
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat: no-repeat;
+      }
+  
+      #gradientSwipe2.visible {
+        animation: gradientSwipe2Transition 1s forwards;
+      }
+  
+      @keyframes gradientSwipe2Transition {
+        0% {
+          mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+          -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+          mask-position: 200% 100%;
+          -webkit-mask-position: 200% 100%;
+        }
+  
+        99% {
+          mask-position: -100% 100%;
+          -webkit-mask-position: -100% 100%;
+        }
+  
+        100% {
+          mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+          -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+        }
+      }

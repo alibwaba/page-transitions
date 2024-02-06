@@ -1,0 +1,41 @@
+/* 
+starShrink is sad re. my efforts with mask-composite: exclude;
+*/
+#starShrink {
+    /* mask-image: url('starinverted.svg'), linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0)); */
+    mask-image: url('../assets/starinverted.svg');
+    -webkit-mask-image: url('../assets/starinverted.svg');
+    /* mask-image: url('star.svg'); */
+    /* mask-composite: exclude;
+  -webkit-mask-composite: exclude; */
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: 300% 300%;
+    -webkit-mask-size: 300% 300%;
+    mask-position: 50% 50%;
+    -webkit-mask-position: 50% 50%;
+    mask-clip: no-clip;
+}
+
+#starShrink.visible {
+    animation: starShrinkTransition 2s forwards;
+}
+
+@keyframes starShrinkTransition {
+    0% {
+        mask-size: 300% 300%;
+        -webkit-mask-size: 300% 300%;
+        /* mask-position: 50% 50%; */
+        /* mask-position: 50% 50%; */
+    }
+
+    99% {
+        mask-size: 0% 0%;
+        -webkit-mask-size: 0% 0%;
+        /* mask-position: 50% 50%; */
+    }
+
+    /* 50% {
+      mask-image: linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 0, 1));
+    } */
+}
