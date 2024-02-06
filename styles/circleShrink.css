@@ -1,26 +1,17 @@
 #circleShrink {
     mask:
-        /* linear-gradient(#000 0 0), */
-        radial-gradient(#000 50%, #0000 50%) center;
-    mask-repeat: no-repeat;
-    -webkit-mask-repeat: no-repeat;
-    /* radial-gradient(#000 50%, #0000 51%) content-box center / 50% 50% no-repeat; */
-    /* mask-composite: exclude; */
-}
+      linear-gradient(#000 0 0),
+      radial-gradient(#000 70%, #0000 71%)
+        50% 50% / 150% 150% no-repeat;
+    mask-composite: exclude;
+    transition: 0s;
+  }
 
-#circleShrink.visible {
-    animation: circleShrinkTransition 2s forwards;
-}
-
-@keyframes circleShrinkTransition {
-    0% {
-        mask-size: 100%;
-        -webkit-mask-size: 100%;
-    }
-
-    100% {
-        mask-size: 0%;
-        -webkit-mask-size: 0%;
-    }
-
-}
+  #circleShrink.visible {
+    mask:
+      linear-gradient(#000 0 0),
+      radial-gradient(#000 70%, #0000 71%)
+        50% 50% / 0% 0% no-repeat;
+    transition: 1s;
+    mask-composite: exclude;
+  }
