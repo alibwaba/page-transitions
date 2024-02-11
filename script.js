@@ -1,4 +1,4 @@
-const transitions = ["cornerSwipe", "sideSwipe", "topSwipe", "greyscaleTopSwipe", "gradientSwipe1", "gradientSwipe2", "rocketShip", "starGrow", "starShrink", "circleGrow", "circleShrink"]
+const transitions = ["cornerSwipe", "sideSwipe", "topSwipe", "grayscaleTopSwipe", "gradientSwipe1", "gradientSwipe2", "rocketShip", "starGrow", "starShrink", "circleGrow", "circleShrink"]
 
 function injectMockPages(transitions) {
   for (let i = 0; i < transitions.length; i++) {

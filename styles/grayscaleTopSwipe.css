@@ -1,0 +1,57 @@
+@property --grayscale {
+    syntax: '<number>';
+    initial-value: 0;
+    inherits: false;
+}
+
+@property --textColor {
+    syntax: '<color>';
+    initial-value: yellow;
+    inherits: false;
+}
+
+.oldPage.grayscaleTopSwipe,
+.newPage.grayscaleTopSwipe {
+    color: var(--textColor);
+    text-align: center;
+    font-size: 2em;
+}
+
+.oldPage.grayscaleTopSwipe {
+    filter: grayscale(var(--grayscale));
+}
+
+.newPage.grayscaleTopSwipe {
+    mask-image: url('../assets/bigblackrectangle.svg');
+    mask-repeat: no-repeat;
+    mask-size: 0;
+}
+
+.newPage.grayscaleTopSwipe.visible {
+    animation: grayscaleTopSwipeTransitionNew 1s forwards;
+}
+
+.oldPage.grayscaleTopSwipe.visible {
+    animation: grayscaleTopSwipeTransitionNew 1s forwards;
+}
+
+@keyframes grayscaleTopSwipeTransitionNew {
+    0% {}
+
+    50% {
+        mask-size: 100%;
+    }
+
+    100% {
+        --grayscale: 1;
+        --textColor: purple;
+    }
+}
+
+/* .oldPage.grayscaleTopSwipe {
+    filter: grayscale(0);
+}
+
+.oldPage.grayscaleTopSwipe.visible {
+    animation: grayscaleTopSwipeTransitionOld 1s forwards;
+} */
