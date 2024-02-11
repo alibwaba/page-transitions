@@ -1,47 +1,47 @@
-#rocketShip {
-    mask-image: url('../assets/rocket.png');
-    -webkit-mask-image: url('../assets/rocket.png');
-    mask-repeat: no-repeat;
-    -webkit-mask-repeat: no-repeat;
+.newPage.rocketShip {
+  mask-image: url('../assets/rocket.png');
+  -webkit-mask-image: url('../assets/rocket.png');
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+.newPage.rocketShip.visible {
+  animation: rocketShipTransition 2s forwards;
+}
+
+@keyframes rocketShipTransition {
+  0% {
+    mask-size: 50% 50%;
+    -webkit-mask-size: 50% 50%;
+    mask-position: 50% 200%;
+    -webkit-mask-position: 50% 200%;
   }
 
-  #rocketShip.visible {
-    animation: rocketShipTransition 2s forwards;
+  20% {
+    mask-size: 50% 50%;
+    -webkit-mask-size: 50% 50%;
+    mask-position: 50% 80%;
+    -webkit-mask-position: 50% 80%;
   }
 
-  @keyframes rocketShipTransition {
-    0% {
-      mask-size: 50% 50%;
-      -webkit-mask-size: 50% 50%;
-      mask-position: 50% 200%;
-      -webkit-mask-position: 50% 200%;
-    }
-
-    20% {
-      mask-size: 50% 50%;
-      -webkit-mask-size: 50% 50%;
-      mask-position: 50% 80%;
-      -webkit-mask-position: 50% 80%;
-    }
-
-    30% {
-      mask-size: 50% 50%;
-      -webkit-mask-size: 50% 50%;
-      mask-position: 50% 90%;
-      -webkit-mask-position: 50% 90%;
-    }
-
-    80% {
-      mask-size: 400% 400%;
-      -webkit-mask-size: 400% 400%;
-      mask-position: 50% 30%;
-      -webkit-mask-position: 50% 30%;
-    }
-
-    100% {
-      mask-size: 400% 400%;
-      -webkit-mask-size: 400% 400%;
-      mask-position: 50% 60%;
-      -webkit-mask-position: 50% 60%;
-    }
+  30% {
+    mask-size: 50% 50%;
+    -webkit-mask-size: 50% 50%;
+    mask-position: 50% 90%;
+    -webkit-mask-position: 50% 90%;
   }
+
+  80% {
+    mask-size: 400% 400%;
+    -webkit-mask-size: 400% 400%;
+    mask-position: 50% 30%;
+    -webkit-mask-position: 50% 30%;
+  }
+
+  100% {
+    mask-size: 400% 400%;
+    -webkit-mask-size: 400% 400%;
+    mask-position: 50% 60%;
+    -webkit-mask-position: 50% 60%;
+  }
+}

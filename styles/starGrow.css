@@ -1,11 +1,11 @@
-#starGrow {
+.newPage.starGrow {
     mask-image: url('../assets/star.svg');
     -webkit-mask-image: url('../assets/star.svg');
     mask-repeat: no-repeat;
     -webkit-mask-repeat: no-repeat;
 }
 
-#starGrow.visible {
+.newPage.starGrow.visible {
     animation: starGrowTransition 2s forwards;
 }
 

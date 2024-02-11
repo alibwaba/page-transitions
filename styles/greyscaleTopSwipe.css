@@ -1,0 +1,22 @@
+.newPage.greyscaleTopSwipe {
+    mask:
+        linear-gradient(#000 0 0),
+        url('../assets/bigblackrectangle.svg') 50% 50% / 100% 100% no-repeat;
+    /* mask-image: url('../assets/bigblackrectangle.svg'); */
+    /* mask-repeat: no-repeat; */
+    /* mask-size: 0%; */
+}
+
+.newPage.greyscaleTopSwipe.visible {
+    animation: greyscaleTopSwipeTransition 0.5s forwards;
+}
+
+@keyframes greyscaleTopSwipeTransition {
+    0% {
+        mask-size: 100% 0%;
+    }
+
+    100% {
+        mask-size: 100% 100%;
+    }
+}

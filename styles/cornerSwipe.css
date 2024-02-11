@@ -1,4 +1,4 @@
-#cornerSwipe {
+.newPage.cornerSwipe {
     mask-image: url('../assets/bigblackrectangle.svg');
     -webkit-mask-image: url('../assets/bigblackrectangle.svg');
     mask-repeat: no-repeat;
@@ -7,7 +7,7 @@
     -webkit-mask-size: 0%;
 }
 
-#cornerSwipe.visible {
+.newPage.cornerSwipe.visible {
     animation: cornerSwipeTransition 0.5s forwards;
 }
 

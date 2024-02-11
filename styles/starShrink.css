@@ -1,4 +1,4 @@
-#starShrink {
+.newPage.starShrink {
     mask:
         linear-gradient(#000 0 0),
         url('../assets/star.svg') 50% 50% / 300% 300% no-repeat;
@@ -10,7 +10,7 @@
     transition: 0s;
 }
 
-#starShrink.visible {
+.newPage.starShrink.visible {
     mask:
         linear-gradient(#000 0 0),
         url('../assets/star.svg') 50% 50% / 0% 0% no-repeat;

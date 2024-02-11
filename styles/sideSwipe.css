@@ -1,4 +1,4 @@
-#sideSwipe {
+.newPage.sideSwipe {
     mask-image: url('../assets/bigblackrectangle.svg');
     -webkit-mask-image: url('../assets/bigblackrectangle.svg');
     mask-repeat: no-repeat;
@@ -7,7 +7,7 @@
     -webkit-mask-size: 0%;
 }
 
-#sideSwipe.visible {
+.newPage.sideSwipe.visible {
     animation: sideSwipeTransition 0.5s forwards;
 }
 

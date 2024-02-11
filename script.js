@@ -1,4 +1,4 @@
-const transitions = ["cornerSwipe", "sideSwipe", "topSwipe", "gradientSwipe1", "gradientSwipe2", "rocketShip", "starGrow", "starShrink", "circleGrow", "circleShrink"]
+const transitions = ["cornerSwipe", "sideSwipe", "topSwipe", "greyscaleTopSwipe", "gradientSwipe1", "gradientSwipe2", "rocketShip", "starGrow", "starShrink", "circleGrow", "circleShrink"]
 
 function injectMockPages(transitions) {
   for (let i = 0; i < transitions.length; i++) {
@@ -7,6 +7,7 @@ function injectMockPages(transitions) {
     const oldPage = document.createElement("div")
     oldPage.classList.add("oldPage")
     oldPage.classList.add("box")
+    oldPage.classList.add(transition)
     oldPage.style = `top:${i * 150}px;`
     oldPage.innerText = "#demo"
     document.getElementById("mockPagesContainer").appendChild(oldPage)
@@ -14,15 +15,15 @@ function injectMockPages(transitions) {
     const newPage = document.createElement("div")
     newPage.classList.add("newPage")
     newPage.classList.add("box")
-    newPage.id = transition
+    newPage.classList.add(transition)
     newPage.style = `top:${i * 150}px;`
     newPage.innerText = "New page"
     document.getElementById("mockPagesContainer").appendChild(newPage)
 
     const button = document.createElement("button")
     button.style = `position:absolute;top:${i * 150 + 100}px;left:0px;`
-    button.innerText = `Toggle new page ${transition}`
-    button.addEventListener("click", () => { toggleVisible(transition) })
+    button.innerText = `Toggle new page with ${transition} transition`
+    button.addEventListener("click", () => { toggleVisible(`.newPage.${transition}`) })
     document.getElementById("mockPagesContainer").appendChild(button)
 
     const stylesheet = document.createElement("link")
@@ -33,8 +34,8 @@ function injectMockPages(transitions) {
   }
 }
 
-function toggleVisible(id) {
-  document.getElementById(id).classList.toggle('visible')
+function toggleVisible(selector) {
+  document.querySelector(selector).classList.toggle('visible')
 }
 
 injectMockPages(transitions)

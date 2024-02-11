@@ -1,4 +1,4 @@
-#circleGrow {
+.newPage.circleGrow {
     mask-image: radial-gradient(#000 50%, #0000 51%);
     -webkit-mask-image: radial-gradient(#000 50%, #0000 51%);
     mask-size: 0%;
@@ -7,7 +7,7 @@
     -webkit-mask-repeat: no-repeat;
 }
 
-#circleGrow.visible {
+.newPage.circleGrow.visible {
     animation: circleGrowTransition 2s forwards;
 }
 
